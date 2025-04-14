@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema Guinda -->
+    <style name="Theme.Practica4Nativas.Guinda" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryGuinda</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGuinda</item>
+        <item name="colorAccent">@color/colorAccentGuinda</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Tema Azul -->
+    <style name="Theme.Practica4Nativas.Azul" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryAzul</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAzul</item>
+        <item name="colorAccent">@color/colorAccentAzul</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+</resources>

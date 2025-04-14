@@ -1,0 +1,16 @@
+<resources>
+    <!-- Guinda (IPN) -->
+    <color name="colorPrimaryGuinda">#800000</color>
+    <color name="colorPrimaryDarkGuinda">#4B0000</color>
+    <color name="colorAccentGuinda">#B22222</color>
+
+    <!-- Azul (ESCOM) -->
+    <color name="colorPrimaryAzul">#0033A0</color>
+    <color name="colorPrimaryDarkAzul">#001F5E</color>
+    <color name="colorAccentAzul">#3366CC</color>
+
+    <!-- Comunes -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="breadcrumb_separator">#FFFFFF</color>
+</resources>

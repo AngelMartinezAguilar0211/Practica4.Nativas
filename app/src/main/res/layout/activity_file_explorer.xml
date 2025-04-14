@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_marginVertical="2dp"
+        android:title="Explorador de Archivos"
+        android:titleTextColor="@android:color/white"/>
+
+    <!-- Ruta actual (breadcrumb visual) -->
+    <HorizontalScrollView
+        android:id="@+id/breadcrumbScroll"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:fillViewport="true"
+        android:paddingBottom="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/breadcrumbLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="8dp" />
+    </HorizontalScrollView>
+
+
+    <!-- Lista de archivos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Texto cuando no hay archivos -->
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carpeta vacía"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+</LinearLayout>

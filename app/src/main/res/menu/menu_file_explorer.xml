@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:title="Favoritos"
+        android:icon="@drawable/ic_star_filled"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_recent"
+        android:title="Recientes"
+        android:icon="@drawable/ic_history"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_theme"
+        android:title="Cambiar tema"
+        android:icon="@drawable/ic_palette"
+        app:showAsAction="ifRoom" />
+</menu>
