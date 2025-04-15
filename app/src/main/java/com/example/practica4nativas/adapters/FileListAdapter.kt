@@ -3,9 +3,6 @@ package com.example.practica4nativas.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.PopupMenu
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import androidx.documentfile.provider.DocumentFile
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practica4nativas.R
 import com.example.practica4nativas.data.FileMetadata

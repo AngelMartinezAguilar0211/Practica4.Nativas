@@ -45,8 +45,7 @@ dependencies {
     implementation(libs.androidx.room.runtime.v270alpha01)
     kapt(libs.androidx.room.compiler.v270alpha01)
     implementation(libs.androidx.room.ktx.v270alpha01)
-
-
+    implementation(libs.google.gson)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

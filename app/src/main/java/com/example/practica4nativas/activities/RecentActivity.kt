@@ -12,7 +12,6 @@ import com.example.practica4nativas.adapters.FileListAdapter
 import com.example.practica4nativas.data.AppDatabase
 import com.example.practica4nativas.data.FavoriteFile
 import com.example.practica4nativas.data.FileMetadata
-import com.example.practica4nativas.data.RecentFile
 import com.example.practica4nativas.utils.ThemeManager
 import com.example.practica4nativas.databinding.ActivityFavoritesBinding
 import kotlinx.coroutines.launch

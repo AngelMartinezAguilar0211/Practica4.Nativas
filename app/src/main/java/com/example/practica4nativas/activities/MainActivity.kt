@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnSecondPart.setOnClickListener {
-            // Luego definiremos esta segunda parte
+            startActivity(Intent(this, MemoryGameMenuActivity::class.java))
         }
     }
 }

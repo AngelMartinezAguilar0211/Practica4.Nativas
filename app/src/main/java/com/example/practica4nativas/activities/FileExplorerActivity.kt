@@ -7,7 +7,6 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.DocumentsContract
 import android.provider.MediaStore
-import android.text.Selection.setSelection
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -19,7 +18,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.setPadding
 import androidx.documentfile.provider.DocumentFile
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,7 +28,6 @@ import com.example.practica4nativas.data.FavoriteFile
 import com.example.practica4nativas.data.FileMetadata
 import com.example.practica4nativas.data.RecentFile
 import com.example.practica4nativas.databinding.ActivityFileExplorerBinding
-import com.example.practica4nativas.utils.FileFormatUtils
 import com.example.practica4nativas.utils.FileUtils
 import com.example.practica4nativas.utils.ThemeManager
 import kotlinx.coroutines.launch
@@ -55,7 +52,7 @@ class FileExplorerActivity : AppCompatActivity() {
             val takeFlags = Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
             contentResolver.takePersistableUriPermission(uri, takeFlags)
 
-// Guardar en SharedPreferences
+            // Guardar en SharedPreferences
             val prefs = getSharedPreferences("app_prefs", MODE_PRIVATE)
             prefs.edit().putString("last_directory_uri", uri.toString()).apply()
 
@@ -187,8 +184,6 @@ class FileExplorerActivity : AppCompatActivity() {
 
         // 🗂️ Si no hay carpeta previa o sin permiso, pedirla
         openDocumentTreeLauncher.launch(null)
-
-
 
     }
 

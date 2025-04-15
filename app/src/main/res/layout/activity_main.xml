@@ -23,6 +23,6 @@
         android:id="@+id/btnSecondPart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Segunda Parte"
+        android:text="Juego de Memoria"
         android:layout_marginTop="16dp" />
 </LinearLayout>

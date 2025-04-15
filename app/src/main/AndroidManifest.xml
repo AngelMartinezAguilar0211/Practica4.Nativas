@@ -18,6 +18,9 @@
         <activity android:name=".activities.TextViewerActivity" />
         <activity android:name=".activities.FavoritesActivity" />
         <activity android:name=".activities.RecentActivity" />
+        <activity android:name=".activities.MemoryGameActivity" />
+        <activity android:name=".activities.MemoryGameMenuActivity" />
+        <activity android:name=".activities.SavedGamesActivity" />
 
 
         <activity
